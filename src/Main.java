@@ -11,11 +11,10 @@ public class Main {
         int publishDateTwo = 2002;
         Book theWorldAround = new Book(titleTwo, robertPinks, publishDateTwo);
         System.out.println(theWorldAround);
-        System.out.println(innaSvetlova.equals(robertPinks));
+        Book theWorldAround2 = new Book(titleTwo, robertPinks, publishDateTwo);
         System.out.println(atlasOfTheEarth.equals(theWorldAround));
-        System.out.println(innaSvetlova.hashCode());
-        System.out.println(robertPinks.hashCode());
-        System.out.println(atlasOfTheEarth.hashCode());
-        System.out.println(theWorldAround.hashCode());
+        System.out.println(theWorldAround.equals( theWorldAround2));
+        System.out.println(theWorldAround.hashCode() == theWorldAround2.hashCode());
+
     }
 }

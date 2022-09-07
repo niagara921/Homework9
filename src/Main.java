@@ -11,5 +11,11 @@ public class Main {
         int publishDateTwo = 2002;
         Book theWorldAround = new Book(titleTwo, robertPinks, publishDateTwo);
         System.out.println(theWorldAround);
+        System.out.println(innaSvetlova.equals(robertPinks));
+        System.out.println(atlasOfTheEarth.equals(theWorldAround));
+        System.out.println(innaSvetlova.hashCode());
+        System.out.println(robertPinks.hashCode());
+        System.out.println(atlasOfTheEarth.hashCode());
+        System.out.println(theWorldAround.hashCode());
     }
 }
